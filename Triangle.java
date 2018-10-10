@@ -7,6 +7,12 @@ public class Triangle {
     c = new Point(C.getX(), C.getY());
   }
 
+  public Triangle(double A, Point B, Point C) {
+    a = new Point(A.getX(), A.getY());
+    b = new Point(B.getX(), B.getY());
+    c = new Point(C.getX(), C.getY());
+  }
+
   public void setA(Point A) {
     a = new Point(A.getX(), A.getY());
   }
