@@ -17,11 +17,11 @@ public class Point{
   }
 
   public double distanceTo(Point a) {
-    return Math.sqrt(Math.pow(this.getX() + a.getX(), 2)+Math.pow(this.getY() + a.getY(), 2));
+    return Math.sqrt(Math.pow(this.getX() - a.getX(), 2)+Math.pow(this.getY() - a.getY(), 2));
   }
 
   public static double distance(Point a, Point b) {
-    return Math.sqrt(Math.pow(b.getX() + a.getX(), 2)+Math.pow(b.getY() + a.getY(), 2));
+    return Math.sqrt(Math.pow(b.getX() - a.getX(), 2)+Math.pow(b.getY() - a.getY(), 2));
   }
 
   public String toString() {
